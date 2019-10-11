@@ -25,12 +25,19 @@ namespace UITests
 			app = AppInitializer.StartApp (platform);
 		}
 
+        //[Test]
+        //public void repl()
+        //{
+        //    app.Repl();
+        //}
+
 		[Test]
 		public void Enter_Creds_And_Tap_Ok ()
 		{
 			var isHybridApp = app.Query (c => c.WebView ()).Any ();
+            app.Repl();
 
-			if (isHybridApp) {
+            if (isHybridApp) {
 				app.EnterText (c => c.Css ("#username"), "PaulP");
 				app.EnterText (c => c.Css ("#password"), "test password");
 				app.DismissKeyboard ();

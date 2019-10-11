@@ -23,7 +23,7 @@ namespace UITests
         //Xamarin Forms
         //.ApkFile ("../../../../Apps/HelloWorld_XamarinForms_Android.apk")
          //Appbuilder
-        .ApkFile ("../../../../Apps/HelloWorld_Appbuilder_Android.apk")
+        .ApkFile ("/Users/ahana/Desktop/XamUITest_Examples/Apps/HelloWorld_Appbuilder_Android.apk")
 				.StartApp ();
       }
 
